@@ -1,0 +1,11 @@
+import tkinter as tk
+window = tk.Tk()
+window.title("File integrity checker")
+window.geometry("600x400")
+tk.Label(window,text="Name").grid(row=0,column=0)
+tk.Label(window,text="Address").grid(row=0,column=1)
+tk.Label(window,text="Age").grid(row=0,column=2)
+tk.Entry(window).grid(row=1,column=0,padx=20,pady=30)
+tk.Entry(window).grid(row=1,column=1,padx=10)
+tk.Entry(window).grid(row=1,column=2,padx=20)
+window.mainloop()
