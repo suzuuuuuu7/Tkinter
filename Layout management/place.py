@@ -1,0 +1,11 @@
+from tkinter import *
+window = Tk()
+window.title("Age")
+window.geometry("500x500")
+l = Label(window,text="Age",font=("Times New Roman",30,"bold"),fg="white",bg="black")
+l.place(x=20,y=100)
+l1= Label(window,text="Address",font=("Times New Roman",30,"bold"),fg="red",bg="green")
+l1.place(x=20,y=170,height=50,width=150)
+l2=Label(window,text="Hostname",font=("Times New Roman",10,"bold"),fg="white",bg="brown")
+l2.place(x=20,y=30)
+window.mainloop()

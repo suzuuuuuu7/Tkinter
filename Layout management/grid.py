@@ -1,0 +1,23 @@
+from tkinter import *
+window = Tk()
+window.title("Pack")
+window.geometry("400x300+200+100")
+window.resizable(False,False)
+window.iconbitmap(r"C:\Users\sujal\Downloads\down.ico")
+window.attributes("-alpha",0.9)
+window.config(bg="gray")
+lab = Label(window,text="Name",font=("times new roman",20,"bold"),fg="black",bg="yellow")
+lab.grid(row=0,column=0)
+lab1 = Label(window,text="Address",font=("times new roman",20,"bold"),fg="white",bg="orange")
+lab1.grid(row=0,column=1)
+lab2 = Label(window,text="Age",font=("times new roman",20,"italic"),fg="gray",bg="green")
+lab2.grid(row=0,column=2)
+lab3 = Label(window,text="Name",font=("times new roman",20,"bold"),fg="black",bg="yellow")
+lab3.grid(row=1,column=0)
+lab4 = Label(window,text="Address",font=("times new roman",20,"bold"),fg="white",bg="orange")
+lab4.grid(row=1,column=1)
+lab5 = Label(window,text="Age",font=("times new roman",20,"italic"),fg="gray",bg="green")
+lab5.grid(row=1,column=2)
+window.mainloop()
+
+
