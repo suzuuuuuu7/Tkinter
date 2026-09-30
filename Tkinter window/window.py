@@ -1,0 +1,11 @@
+from tkinter import *
+window = Tk()
+window.title("Window")
+window.iconbitmap(r"C:\Users\sujal\Downloads\down.ico")
+window.attributes('-alpha',0.7)
+window.config(bg="pink")
+window.geometry("600x600+200-50")
+s_width = window.winfo_screenwidth()
+s_height = window.winfo_screenheight()
+print(s_width,s_height)
+window.mainloop()
