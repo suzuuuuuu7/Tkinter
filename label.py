@@ -12,5 +12,4 @@ var =tk.StringVar()
 var.set(text)
 label1 = tk.Label(window,textvariable= var,font=("Times Roman",12,"bold"),bg="yellow",fg="black")
 label1.place(x=70,y=250)
-
 window.mainloop()
