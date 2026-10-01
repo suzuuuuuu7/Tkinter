@@ -1,0 +1,13 @@
+from tkinter import *
+win = Tk()
+win.title("LayerFrame")
+win.geometry("700x700")
+lf=LabelFrame(win,text="Layer Frame",font=("Times Roman",20,"bold"),fg="blue",bg="skyblue",labelanchor="n")
+lf.place(x=100,y=100,height=100,width=500)
+l=Label(win,text="python",font=("Times Roman",10,"bold"),bg="skyblue")
+l.place(x=150,y=150)
+l1=Label(win,text="java",font=("Times Roman",10,"bold"),bg="skyblue")
+l1.place(x=250,y=150)
+l2=Label(win,text="php",font=("Times Roman",10,"bold"),bg="skyblue")
+l2.place(x=350,y=150)
+win.mainloop()
