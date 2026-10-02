@@ -1,0 +1,21 @@
+from tkinter import *
+win = Tk()
+photo = PhotoImage(file=r"C:\Users\sujal\Downloads\alert.png")
+win.geometry("600x600")
+win.iconbitmap(r"C:\Users\sujal\Downloads\down.ico")
+win.resizable(False,False)
+win.title("Button")
+label =Label(image=photo)
+label.place(width=300,height=300,x=150,y=100)
+def show():
+    lb.config(text=var.get())
+btn_li=(("small","Thank you"),("medium","Thanks"),("large","got it"))
+var = StringVar()
+for i in btn_li:
+    btn = Radiobutton(win,text=i[0],value = i[1],variable=var,command=show)
+    btn.pack()
+lb = Label(win,text="")
+lb.pack()
+#btn = Button(win,text="select",command =show)
+#btn.pack()
+win.mainloop()
