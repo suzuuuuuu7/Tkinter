@@ -11,7 +11,7 @@ def show():
     name = entry.get()
     print(name)
 def remove():
-    entry.delete(0,tk.END)
+    entry.delete(0,tk.END)  
 tk.Button(window,text="Insert  entry",command=show).grid(row = 1,column=1)
 tk.Button(window,text=" delete entry",command=remove).grid(row = 2,column=1)
 window.mainloop()
