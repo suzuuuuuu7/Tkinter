@@ -1,0 +1,15 @@
+from tkinter import *
+win=Tk()
+def show():
+   var = t1.get(1.0,END)
+   l.config(text=var)
+win.title("Textbox")
+win.geometry("700x400")
+win.resizable(width=False,height=False)
+t1=Text(win,font=("Times New Roman",14),fg="black",bg="white",height=10,bd=2)
+t1.place(x=10,y=10,width=500)
+btn=Button(win,text="Save",font=("times new roman",16,"bold"),fg="red",command=show)
+btn.place(x=200,y=250,width=100)
+l = Label(win,text="",wraplength=500)
+l.place(x=10,y=300)
+win.mainloop()
