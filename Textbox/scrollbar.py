@@ -10,5 +10,4 @@ textbox.place(x=10,y=50,height=400,width=489)
 scrollbar=ttk.Scrollbar(win,command=textbox.yview,orient="vertical")
 scrollbar.place(x=500,y=55,height=400,width=20)
 textbox["yscrollcommand"]=scrollbar.set
-
 win.mainloop()
