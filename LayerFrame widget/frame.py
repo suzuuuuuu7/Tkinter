@@ -1,0 +1,10 @@
+from tkinter import *
+win=Tk()
+win.geometry("500x500")
+frame1=Frame(win,bg="skyblue",bd=3)
+frame1.place(x=0,y=0,width=500,height=500)
+label=Label(frame1,text="hello sujal")
+label.place(x=10,y=10)
+frame2=Frame(win,bg="green",bd=3)
+frame2.place(x=500,y=0,width=500,height=500)
+win.mainloop()
