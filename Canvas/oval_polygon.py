@@ -1,0 +1,11 @@
+from tkinter import *
+win=Tk()
+win.geometry("800x1000")
+win.resizable(width=False,height=False)
+win.title("Canvas")
+canvas=Canvas(win,bg="gray")
+canvas.place(x=0,y=0,height=700,width=600)
+oval=canvas.create_oval(50,50,150,100,fill="red")
+triangle=canvas.create_polygon(10, 200, 100, 100, 200, 200, fill="blue")
+rectangle=canvas.create_rectangle(30,200,175,300,fill="black")
+win.mainloop()
