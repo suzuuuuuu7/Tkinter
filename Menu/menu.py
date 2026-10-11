@@ -8,7 +8,6 @@ win.config(menu=main_manu) # add changes to win(object)
 
 #file menu
 file_menu =Menu(main_manu,tearoff = 0)
-
 #sub menu
 sub_menu=Menu(main_manu,tearoff=0)
 sub_menu.add_command(label="Black hat hacker")

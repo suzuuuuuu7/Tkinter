@@ -13,7 +13,7 @@ label.bind("<Button-1>",web)
 
 def show(event):
     print("ok")
-button = Button(win,text="open")
+button = Button(win,text="open",relief ="sunken")
 button.place(x=10,y=100,height=100,width=100)
 button.bind("<Double Button-1>",show)
 win.mainloop()

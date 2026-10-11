@@ -8,7 +8,7 @@ def show(var):
     l.config(text=var)
 opn_list =["Data Science","Cyber Security","Ai/Ml","web development","Graphic Designer"]
 value = StringVar()
-value.set("SEO")
+value.set("SEO") # set default value
 op_menu = OptionMenu(win,value,*opn_list,command=show)
 op_menu.place(x=100,y=100)
 l=Label(win,text="",)
